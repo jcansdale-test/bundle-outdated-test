@@ -15,7 +15,7 @@ jobs:
       - name: Add Gemfile
         run: |
           cat > Gemfile << EOM
-          source "https://rubygems.pkg.github.com/${{ github.repository_owner }}" do
+          source "https://rubygems.pkg.github.com/github-packages-examples" do
             gem "rubygems-publish"
           end
           EOM
