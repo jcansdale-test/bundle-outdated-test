@@ -35,3 +35,5 @@ jobs:
 
       - name: Run using bundle exec
         run: bundle exec ruby main.rb
+
+      - run: bundle outdated
