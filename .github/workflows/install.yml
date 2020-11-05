@@ -28,7 +28,7 @@ jobs:
           EOM
 
       - name: Authenticate using Bundler
-        run: bundle config https://rubygems.pkg.github.com/github-packages-examples token:${{ secrets.READ_PACKAGES_TOKEN }}
+        run: bundle config https://rubygems.pkg.github.com/github-packages-examples token:${{ github.token }}
 
       - name: Install using Bundler
         run: bundle install
